@@ -7,9 +7,9 @@ compiler:
   - gcc
 
 addons:
-  apt:
+  homebrew:
     packages:
-      - graphviz
+      - beanstalk
 
 before_install:
   - brew update
