@@ -1,0 +1,20 @@
+language: c
+
+os:
+  - osx
+
+compiler:
+  - gcc
+
+addons:
+  apt:
+    packages:
+      - graphviz
+
+before_install:
+  - brew update;
+  - brew install python
+  - python --version
+
+script:
+  - python test.py
