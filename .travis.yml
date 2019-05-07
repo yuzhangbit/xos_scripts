@@ -7,14 +7,14 @@ compiler:
   - gcc
 
 addons:
-  apt:
+  homebrew:
     packages:
-      - graphviz
+      - beanstalk
 
 before_install:
-  - brew update;
-  - brew install python
+  - brew update
   - python --version
+  - ./install_mkdocs.sh
 
 script:
   - python test.py
