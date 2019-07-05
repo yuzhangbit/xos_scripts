@@ -15,6 +15,9 @@ before_install:
   - brew update
   - python --version
   - ./install_mkdocs.sh
+  - mkdocs new project
+  - cd project && pwd
+  - cd ..
 
 script:
   - python test.py

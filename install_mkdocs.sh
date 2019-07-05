@@ -9,6 +9,7 @@ install_mkdocs_bibtex()
 brew update
 brew upgrade python
 easy_install pip3
+
 pip3 install --upgrade pip
 pip3 install mkdocs python-markdown-math pymdown-extensions mkdocs-material markdown-include
 install_mkdocs_bibtex
